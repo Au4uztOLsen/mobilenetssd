@@ -155,8 +155,8 @@ def event_handle(event,json_line):
         elif (msg == "เเดกเหล้าป่าว") :
             replyObj = TextSendMessage(text="รอไรอ่ะ เอาดิ")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif (msg == "KFCหรือMcdonald") :
-            replyObj = TextSendMessage(text="Bonchon")
+        elif (msg == "เธอเป็นใคร") :
+            replyObj = TextSendMessage(text="อันที่จริงฉันเป็นประธานบริษัท")
             line_bot_api.reply_message(rtoken, replyObj)
         else : 
             headers = request.headers
