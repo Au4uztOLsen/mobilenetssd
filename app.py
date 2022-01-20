@@ -152,11 +152,11 @@ def event_handle(event,json_line):
         if (msg == "สวัสดี") :
             replyObj = TextSendMessage(text="สวัสดีค่า")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif (msg == "เเดกเหล้าป่าว") :
-            replyObj = TextSendMessage(text="รอไรอ่ะ เอาดิ")
+        elif (msg == "หิวข้าวมั้ย") :
+            replyObj = TextSendMessage(text="ไม่หิวจ้าาาาาาาาา")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif (msg == "เธอเป็นใคร") :
-            replyObj = TextSendMessage(text="อันที่จริงฉันเป็นประธานบริษัท")
+        elif (msg == "ไข่กับไก่อะไรเกิดก่อน") :
+            replyObj = TextSendMessage(text="ไม่มีอะไรเกิดเลยจ้าาาาาโหงงหมดด")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "covid" :
             url = "https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces"
