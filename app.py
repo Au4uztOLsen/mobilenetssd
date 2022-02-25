@@ -150,13 +150,13 @@ def event_handle(event,json_line):
     if msgType == "text":
         msg = str(event["message"]["text"])
         if (msg == "สวัสดี") :
-            replyObj = TextSendMessage(text="สวัสดีค่า")
+            replyObj = TextSendMessage(text="สวัสดีครับ Miku IT ยินให้บริการสนใจสินค้าในร้านสามารถสอบถามได้ครับ")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif (msg == "หิวข้าวมั้ย") :
-            replyObj = TextSendMessage(text="ไม่หิวจ้าาาาาาาาา")
+        elif (msg == "การ์ดจอที่ถูกที่สุดในร้าน") :
+            replyObj = TextSendMessage(text="Colorful การ์ดจอ Nvidia GeForce GT 1030 4G/2G 2990 บาท")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif (msg == "ไข่กับไก่อะไรเกิดก่อน") :
-            replyObj = TextSendMessage(text="ไม่มีอะไรเกิดเลยจ้าาาาาโหงงหมดด")
+        elif (msg == "การ์ดจอที่เเรงที่สุดในร้าน") :
+            replyObj = TextSendMessage(text="การ์ดจอ GIGABYTE GEFORCE RTX 3090 GAMING OC 24GB GDDR6X 110,300 บาท")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "covid" :
             url = "https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces"
