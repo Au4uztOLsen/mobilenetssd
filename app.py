@@ -158,7 +158,7 @@ def event_handle(event,json_line):
         elif (msg == "การ์ดจอที่เเรงที่สุดในร้าน") :
             replyObj = TextSendMessage(text="การ์ดจอ GIGABYTE GEFORCE RTX 3090 GAMING OC 24GB GDDR6X 110,300 บาท")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif (msg == "เซตคอมพิวเตอร์เเนะนำสำหรับคนไม่มีงบ") :
+        elif (msg == "เซตคอมพิวเตอร์เเนะนำสำหรับคนงบน้อย") :
             replyObj = TextSendMessage(text="Intel Core i3-10100,MSI H410-A Pro,Corsair Vengeance LPX DDR4 2666 8GB,SSD WD Green 240GB,Intel UHD Graphic 630,Deepcool DN500 500W,Case Aerocool Streak")
             line_bot_api.reply_message(rtoken, replyObj)
         elif (msg == "เซตคอมพิวเตอร์เเนะนำ") :
