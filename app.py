@@ -158,6 +158,12 @@ def event_handle(event,json_line):
         elif (msg == "การ์ดจอที่เเรงที่สุดในร้าน") :
             replyObj = TextSendMessage(text="การ์ดจอ GIGABYTE GEFORCE RTX 3090 GAMING OC 24GB GDDR6X 110,300 บาท")
             line_bot_api.reply_message(rtoken, replyObj)
+        elif (msg == "เซตคอมพิวเตอร์เเนะนำสำหรับคนไม่มีงบ") :
+            replyObj = TextSendMessage(text="Intel Core i3-10100,MSI H410-A Pro,Corsair Vengeance LPX DDR4 2666 8GB,SSD WD Green 240GB,Intel UHD Graphic 630,Deepcool DN500 500W,Case Aerocool Streak")
+            line_bot_api.reply_message(rtoken, replyObj)
+        elif (msg == "เซตคอมพิวเตอร์เเนะนำ") :
+            replyObj = TextSendMessage(text="INTEL i5-10400 6C/12T Turbo 4.3GHz / H510M / RAM 16 DDR4 2666 / SSD 480 GB / 600W / GTX 1650 4GB")
+            line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "covid" :
             url = "https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces"
             response = requests.get(url)
